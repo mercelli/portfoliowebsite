@@ -1,6 +1,8 @@
 import Section from "../components/ui/Section.jsx";
 import Container from "../components/ui/Container.jsx";
 import Button from "../components/ui/Button.jsx";
+import TechStack from "../sections/TechStack.jsx";
+import Projects from "../sections/Projects.jsx";
 
 export default function Home() {
   return (
@@ -43,9 +45,22 @@ export default function Home() {
                 </Button>
               </div>
             </div>
+            {/* Circular Image - 1/3 */}
+
+            <div className="lg:col-span-1 flex justify-center lg:justify-end">
+              <div className="w-64 h-64 lg:w-80 lg:h-80 card-avatar">
+                <img
+                  src="https://picsum.photos/320?random=100"
+                  alt="Joe Anonymous"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
           </div>
         </Container>
       </Section>
+      <TechStack />
+      <Projects />
     </div>
   );
 }
