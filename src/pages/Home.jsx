@@ -4,6 +4,7 @@ import Button from "../components/ui/Button.jsx";
 import TechStack from "../sections/TechStack.jsx";
 import Projects from "../sections/Projects.jsx";
 import Testimonials from "../sections/Testimonials.jsx";
+import FinalCTA from "../sections/FinalCTA.jsx";
 
 export default function Home() {
   return (
@@ -63,6 +64,7 @@ export default function Home() {
       <TechStack />
       <Projects limit={6} />
       <Testimonials limit={3} />
+      <FinalCTA />
     </div>
   );
 }
