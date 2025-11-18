@@ -16,7 +16,7 @@ export default function Navbar() {
         {/* Left: Logo/Brand */}
         <div className="flex-1 flex justify-start">
           <a href="/" className="flex items-center gap-2">
-            <span className="text-white font-semibold">CB Hayes</span>
+            <span className="text-white font-semibold">Elena Mercelli</span>
           </a>
         </div>
         {/* Center: Navigation links (hidden on small screens) */}
@@ -40,9 +40,15 @@ export default function Navbar() {
         </nav>
         {/* Right: CTA / mobile button */}
         <div className="flex-1 flex justify-end">
-            <Button as="a" href="/contact" variant="primary" size="sm" className="hidden md:inline-flex">
-              Contact Me
-            </Button>
+          <Button
+            as="a"
+            href="/contact"
+            variant="primary"
+            size="sm"
+            className="hidden md:inline-flex"
+          >
+            Contact Me
+          </Button>
         </div>
       </Container>
     </header>

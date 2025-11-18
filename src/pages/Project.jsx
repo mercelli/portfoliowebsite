@@ -17,7 +17,9 @@ export default function Project() {
       <Section>
         <Container>
           <h1 className="heading-section">Project not found</h1>
-          <p className="mt-2 body-default">We couldn't find a project at /portfolio/{slug}</p>
+          <p className="mt-2 body-default">
+            We couldn't find a project at /portfolio/{slug}
+          </p>
           <div className="mt-6">
             <Button onClick={() => navigate(-1)} variant="secondary" size="sm">
               Go Back
@@ -34,18 +36,26 @@ export default function Project() {
         title={project.title}
         description={
           project.blurb ||
-          `${project.title} - A project by Christopher Hayes showcasing UX design and development skills.`
+          `${project.title} - A project by Elena Mercelli showcasing UX design and development skills.`
         }
         url={`/portfolio/${project.id}`}
         image={project.image}
       />
       <Container>
         <Breadcrumb
-          items={[{ label: "Home", href: "/" }, { label: "Work", href: "/work" }, { label: project.title }]}
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Portfolio", href: "/portfolio" },
+            { label: project.title },
+          ]}
         />
 
         <nav className="body-small subheading-muted">
-          <Button onClick={() => navigate(-1)} variant="link" leftIcon={<FaArrowLeft className="w-4 h-4" />}>
+          <Button
+            onClick={() => navigate(-1)}
+            variant="link"
+            leftIcon={<FaArrowLeft className="w-4 h-4" />}
+          >
             Go Back
           </Button>
         </nav>
@@ -67,14 +77,14 @@ export default function Project() {
           <div>
             <h2 className="subheading-primary">Overview</h2>
             <p className="mt-2 body-default">
-              Replace this with a short case study: problem, your role, tools, constraints, outcome.
+              {project.overview || "No overview available for this project."}
             </p>
 
             <h3 className="mt-6 font-semibold">Highlights</h3>
             <ul className="mt-2 list-disc pl-5 body-default space-y-1">
-              <li>Goal / KPI impact</li>
-              <li>Key UX or dev contribution</li>
-              <li>Notable constraint or insight</li>
+              {project.highlights?.map((highlight, index) => (
+                <li key={index}>{highlight}</li>
+              )) || "No highlights available."}
             </ul>
           </div>
         </div>

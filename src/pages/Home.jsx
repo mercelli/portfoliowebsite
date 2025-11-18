@@ -19,13 +19,11 @@ export default function Home() {
             {/* Text content - 2/3rds */}
             <div className="lg:col-span-2 text-center lg:text-left">
               <h1 id="intro-heading" className="heading-hero">
-                Hi, my name is CB Hayes. I create things for the web
+                Hello there!
               </h1>
               <h2 className="mt-4 max-w-prose lg:mx-0 mx-auto body-large">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                interdum urna quis magna lobortis, eget finibus urna vestibulum.
-                Sed nec ex non justo dictum venenatis. Fusce nec purus nec
-                mauris posuere malesuada
+                I'm Elena Mercelli and welcome to my portfolio. I design
+                websites.
               </h2>
               {/* CTA Buttons */}
               <div className="mt-8 flex flex-wrap lg:justify-start justify-center gap-4">
@@ -52,7 +50,7 @@ export default function Home() {
             <div className="lg:col-span-1 flex justify-center lg:justify-end">
               <div className="w-64 h-64 lg:w-80 lg:h-80 card-avatar">
                 <img
-                  src="https://picsum.photos/320?random=100"
+                  src="src\assets\1.jpg"
                   alt="Joe Anonymous"
                   className="w-full h-full object-cover"
                 />

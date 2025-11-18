@@ -6,7 +6,7 @@ export default function About() {
     <Section>
       <Container>
         <h1 className="heading-page">About Me</h1>
-        <p className="mt-2 body-default">Placeholder content.</p>
+        <div className="mt-2 body-default"></div>
       </Container>
     </Section>
   );
