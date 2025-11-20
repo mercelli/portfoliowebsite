@@ -14,7 +14,7 @@ export default function Resume() {
       <Section>
         <Container>
           <h1 className="heading-page">My Resume</h1>
-          <p className="mt-2 body-default">Placeholder content.</p>
+          <p className="mt-2 body-default">Place holder content.</p>
           <iframe
             src="src\assets\Test_Resume.pdf
         "
