@@ -1,6 +1,6 @@
-import Container from "../Components/ui/Container.jsx";
-import Button from "../Components/ui/Button.jsx";
-import Section from "../Components/ui/Section.jsx";
+import Container from "../components/ui/Container.jsx";
+import Button from "../components/ui/Button.jsx";
+import Section from "../components/ui/Section.jsx";
 
 export default function FinalCTA() {
   return (
